@@ -1,0 +1,12 @@
+FC = gfortran 
+FFLAGS += -ffree-line-length-none
+
+all:
+	${MAKE} -C src
+
+clean: 
+	-rm LikeDM.fortran 
+	cd src; rm *.o *.mod
+	cd FMinuit;rm *.o *.a 
+	cd CPPMinuit; make mostlyclean-recursive
+	cd pyminuit ;python setup.py clean

@@ -1,0 +1,41 @@
+FC = gfortran
+FFLAGS += -ffree-line-length-none
+
+VPATH= src : Minuit
+
+
+minuit_PATH =../FMinuit
+
+minuit_FILE = $(wildcard $(minuit_PATH)/*.F)
+ 
+minuit_OBJS= $(minuit_FILE:.F=.o)
+
+             
+                        
+
+SOURS = inifile.f90 MathLib.f90 PYTHIA_PPPC4.f90 charge_data.f90 ReadTable.f90 gamma_dSphs.f90 charge_bkg.f90 charge_antip.f90 charge_lepton.f90 monitorLikeDM.f90 Main.f90
+OBJS  = inifile.o MathLib.o PYTHIA_PPPC4.o charge_data.o ReadTable.o gamma_dSphs.o charge_bkg.o charge_antip.o charge_lepton.o monitorLikeDM.o Main.o
+
+
+all: lib LikeDM
+
+lib: $(minuit_OBJS)
+	ar rcs ../FMinuit/libminuit.a $(minuit_OBJS)
+
+$(minuit_PATH)/%.o: $(minuit_PATH)/%.F
+	$(FC) $(FFLAGS) -c  $^ -o $@
+
+
+LikeDM : ${OBJS}
+	${FC} $(FFLAGS) -o ../LikeDM.fortran ${OBJS} ../FMinuit/libminuit.a
+
+
+%.o: %.f90
+	$(FC) $(FFLAGS) -c $<
+
+
+clean: 
+	-rm ../LikeDM.fortran *.o *.mod
+	cd ../FMinuit;rm *.a *.o 
+
+

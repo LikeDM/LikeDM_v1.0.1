@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyMinuit
+Version: 1.2.1
+Summary: pyMinuit: Minuit interface for minimizing Python functions
+Home-page: http://code.google.com/p/pyminuit/
+Author: Jim Pivarski
+Author-email: jpivarski@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -1,0 +1,31 @@
+LikeDM package: likelihood calculation for dark matter detection
+Copyright: Xiaoyuan Huang (huangxiaoyuan@gmail.com) 
+           Yue-Lin Sming Tsai (smingtsai@gmail.com)
+           Qiang Yuan (yuanq@pmo.ac.cn)
+
+Simply ./create_LikeDM.sh
+Usage: ./pyLikeDM.py LikeDM_input_example.ini
+       
+
+NOTE1: If user wants to install pure fortran version of LikeDM, we 
+       recommend to use compiler ifort because the fortran version 
+       of Minuit does not work well with gfortran or others. 
+       In this case, simply decompress FMinuit.tar.gz and copy 
+
+       LikeDM/Makefile.org to LikeDM/Makefile and 
+       LikeDM/src/Makefile.org to LikeDM/src/Makefile, then make.
+       If ifort compiler is not available, we recommend to use 
+       pyLikeDM: LikeDM with python interface.
+
+NOTE2: To install pyLikeDM, you need "f2py" package.
+       Please prepare "numpy" before installation. 
+       
+       - To install "f2py" with the ubuntu system:
+         sudo apt-get install python-numpy
+         sudo apt-get install python2.7-dev
+
+       The script create_LikeDM.sh is just an example to install
+       pyminuit and pyLikeDM.
+       Please modify this script by your own use.
+
+
