@@ -1,4 +1,4 @@
-FC = gfortran
+FC = ifort
 FFLAGS += -ffree-line-length-none
 
 VPATH= src : Minuit
