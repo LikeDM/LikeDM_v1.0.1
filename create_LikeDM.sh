@@ -60,7 +60,7 @@ else
 fi
 
 echo "export LD_LIBRARY_PATH=${this_dir}/CPPMinuit/src/.libs/:\$LD_LIBRARY_PATH"  >> ~/.bashrc
-echo "export PYTHONPATH=${this_dir}/pyminuit/lib/python:i\$PYTHONPATH"  >> ~/.bashrc
+echo "export PYTHONPATH=${this_dir}/pyminuit/lib/python:\$PYTHONPATH"  >> ~/.bashrc
 source ~/.bashrc
 
 
