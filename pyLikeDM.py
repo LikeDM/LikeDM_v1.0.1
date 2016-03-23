@@ -8,7 +8,7 @@ try:
    import iminuit as minuit
 except:
    import minuit
-   sys.path.append('./pyminuit/build/lib.linux-x86_64-2.7/') # perhaps depend on your computer
+#   sys.path.append('./pyminuit/build/lib.linux-x86_64-2.7/') # perhaps depend on your computer
 
 
 
