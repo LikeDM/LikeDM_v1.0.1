@@ -22,7 +22,7 @@ case ${set_pyminuit} in
               make
 
               if [ -e "${this_dir}/CPPMinuit/src/.libs/liblcg_Minuit.so.0" ]; then
-                 sudo cp ${this_dir}/CPPMinuit/src/.libs/liblcg_Minuit.so.0 /usr/lib
+                # sudo cp ${this_dir}/CPPMinuit/src/.libs/liblcg_Minuit.so.0 /usr/lib
                  cd ${this_dir}/pyminuit
                  python setup.py clean
                  python setup.py install --home=${this_dir}/pyminuit --with-minuit=${this_dir}/CPPMinuit
