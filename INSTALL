@@ -23,6 +23,13 @@ NOTE2: To install pyLikeDM, you need "f2py" package.
        - To install "f2py" with the ubuntu system:
          sudo apt-get install python-numpy
          sudo apt-get install python2.7-dev
+         
+NOTE3: Add the following line in your .bashrc or .bash_profile file
+       to enable the call of pyminuit library (path_LikeDM is the
+       path of your LikeDM folder):
+       export LD_LIBRARY_PATH=path_LikeDM/CPPMinuit/src/.libs/:$LD_LIBRARY_PATH
+       export PYTHONPATH=path_LikeDM/pyminuit/lib/python:$PYTHONPATH
+
 
        The script create_LikeDM.sh is just an example to install
        pyminuit and pyLikeDM.
