@@ -17,11 +17,11 @@ astrophysical backgrounds.
 
 >[LikeDM@hepforge](https://likedm.hepforge.org/)
 
-- [Manual](http://arxiv.org/abs/1603.XXXX)
+- [Manual](http://arxiv.org/abs/1603.07119)
 
 >LikeDM: likelihood calculator of dark matter detection   
 Xiaoyuan Huang, Yue-Lin Sming Tsai, Qiang Yuan   
-[arXiv:1603.XXXX](http://arxiv.org/abs/1603.XXXX)
+[arXiv:1603.07119](http://arxiv.org/abs/1603.07119)
 
 The currently released version (v1.0) contains only the indirect ditection 
 part, including
