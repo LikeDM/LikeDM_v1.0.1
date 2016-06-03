@@ -197,6 +197,7 @@ contains
 
       ! working in progress http://arxiv.org/pdf/1510.00389
       !                     http://arxiv.org/pdf/1408.0002v2
+      !                     https://arxiv.org/abs/1603.08046  <= including the non-sphericity unc.
 
       do i=1,dsphs__ndsphs,1
         dsphs__logJ(i)= dsphs__logJ(i)+dlog10(Msun/kpc2cm/kpc2cm)
