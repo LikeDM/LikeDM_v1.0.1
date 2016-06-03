@@ -1,4 +1,4 @@
-# LikeDM_v1.0
+# LikeDM_v1.0.1
 
 LikeDM is a likelihood calculator of dark matter detection. 
 
@@ -23,7 +23,7 @@ astrophysical backgrounds.
 Xiaoyuan Huang, Yue-Lin Sming Tsai, Qiang Yuan   
 [arXiv:1603.07119](http://arxiv.org/abs/1603.07119)
 
-The currently released version (v1.0) contains only the indirect ditection 
+The currently released version (v1.0.1) contains only the indirect ditection 
 part, including
 
 - the electron/positron measurements by AMS-02,
